@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>simple todo list</title>
-</head>
-<body>
-    <div class="fullWrapper">
-        <div class="wrapper">
-            <div class="header">
-                <h1>Make your To-Do list</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>simple todo list</title>
+    </head>
+    <body>
+        <div class="fullWrapper">
+            <div class="wrapper">
+                <div class="header">
+                    <h1>Make your To-Do list</h1>
+                    <h2 class="plus">&#43;</h2>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="fullWrapper">
-        <div class="wrapper">
-            <div class="mainContent"></div>
+        <div class="fullWrapper">
+            <div class="wrapper">
+                <div class="mainContent">
+                    <div class="inputConteiner">
+                        <input type="text" id="input" />
+                        <button type="button" class="AddBtn">Add</button>
+                    </div>
+                    <div class="todoLists"></div>
+                </div>
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
