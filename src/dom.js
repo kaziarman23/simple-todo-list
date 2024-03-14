@@ -2,20 +2,17 @@ const AddBtn = document.querySelector(".AddBtn");
 const todoLists = document.querySelector(".todoLists");
 
 function addContent() {
-
     AddBtn.addEventListener("click", function () {
-
-        const pageContent = document.createElement("div");
+        const pageContent = document.createElement("li");
 
         const input = document.querySelector("#input");
         const inputValue = document.createElement("h1");
-        if(input.value !== ""){
+        if (input.value !== "") {
             inputValue.innerHTML = input.value.toUpperCase();
-        }
-        else{
+        } else {
             inputValue.textContent = "Name?";
         }
-        
+
         const deleteBtn = document.createElement("button");
         deleteBtn.textContent = "Delete";
 
@@ -37,7 +34,6 @@ function addContent() {
 
         // erasing  values
         input.value = "";
-        
     });
 }
 
